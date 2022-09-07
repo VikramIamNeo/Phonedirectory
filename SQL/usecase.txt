@@ -6,3 +6,4 @@ pinCode varchar(30),state varchar(25),country varchar(25),foreign key (id) refer
 
 create table contact(id int,primaryMobileNumber varchar(25),
 secondaryMobileNumber varchar(25),officialMobileNumber varchar(25),faxnumber varchar(25),foreign key (id) references register(id));
+//
