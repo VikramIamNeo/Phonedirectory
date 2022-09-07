@@ -1,0 +1,8 @@
+create table register(id int,firstName varchar(30),lastName varchar(25),department varchar(30),
+designation varchar(30),experience int,primary key(id));
+
+create table address(id int,streetName varchar(30),city varchar(30),
+pinCode varchar(30),state varchar(25),country varchar(25),foreign key (id) references register(id));
+
+create table contact(id int,primaryMobileNumber varchar(25),
+secondaryMobileNumber varchar(25),officialMobileNumber varchar(25),faxnumber varchar(25),foreign key (id) references register(id));
